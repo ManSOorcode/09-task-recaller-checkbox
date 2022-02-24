@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #004882;
+
+	display: grid;
+	place-items: center;
+
+	height: 80vh;
+}
+.head h2 {
+	font-size: 3rem;
+	font-weight: 800;
+	font-family: monospace;
+	letter-spacing: 1px;
+
+	color: antiquewhite;
+
+	pointer-events: none;
+
+	text-shadow: 10px 10px 10px #333;
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.box select {
+	width: 250px;
+	height: 50px;
+	padding: 10px;
+
+	background: #0563af;
+	color: #fff;
+
+	font-size: 20px;
+
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+
+	outline: none;
+}
+
+.box::before {
+	content: "\F282";
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 50px;
+	height: 50px;
+
+	background: #007ce0;
+
+	font-size: 28px;
+
+	font-family: "bootstrap-icons";
+	color: #fff;
+
+	text-align: center;
+
+	line-height: 50px;
+
+	pointer-events: none;
+}
+
+.box:hover::before {
+	background: #0472ca;
+}
